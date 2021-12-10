@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "ini adalah index"
+    return render_template("front_page.html")
 
 @app.route('/<name>')
 def hello(name):
